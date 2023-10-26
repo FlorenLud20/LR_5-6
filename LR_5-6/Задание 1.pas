@@ -1,4 +1,4 @@
-﻿9Program z_1;
+﻿Program z_1;
 const Sz = 20; // размер массива
 var 
   a: array [1..Sz] of integer; // создаем массив
