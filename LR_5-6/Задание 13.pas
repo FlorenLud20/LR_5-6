@@ -1,7 +1,8 @@
-﻿program z_13;
+Program z_13;
 var
   arr: array[1..20] of Integer; // создаем массив
   i, min, max: 1..20;
+  temp: Integer; // временная переменная
 begin
   Randomize; // генератор случайных чисел
 
@@ -20,12 +21,11 @@ begin
   end;
 
   // Меняем местами минимальный и максимальный элементы
-  arr[min] := arr[min] + arr[max];
-  arr[max] := arr[min] - arr[max];
-  arr[min] := arr[min] - arr[max];
+  temp := arr[min];
+  arr[min] := arr[max];
+  arr[max] := temp;
 
   for i := 1 to 20 do // Выводим массив
     Write(arr[i], ' ');
-  writeln;
 end.
 
