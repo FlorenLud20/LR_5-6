@@ -1,4 +1,4 @@
-﻿program z_8;
+program z_8;
 var
   arr: array of Integer; // объявляем массив
   n, i, j, maxCount, num, count: Integer; 
